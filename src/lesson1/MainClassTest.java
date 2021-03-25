@@ -18,4 +18,10 @@ public class MainClassTest {
         Assert.assertTrue("is less than 45!", mainClass.getClassNumber() > 45);
     }
 
+    @Test
+    public void testGetClassString() {
+        String str = new MainClass().getClassString();
+        Assert.assertTrue("does not contain substring", str.contains("hello") || str.contains("Hello"));
+    }
+
 }
